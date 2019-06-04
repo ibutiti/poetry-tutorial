@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "demo"
+version = "0.1.0"
+description = "Demo to learn Poetry!"
+authors = ["Project Author <allan1mwangi@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.21"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.3"
+pylint = "^2.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+get-pokemon = "demo.main:get_random_pokemon"
